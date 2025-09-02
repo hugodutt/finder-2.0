@@ -1,7 +1,7 @@
 import { Finding } from '../types';
 import { classify, isRoutable } from './emailUtils';
 
-const GITHUB_TOKEN = import.meta.env.VITE_GITHUB_TOKEN || '';
+const GITHUB_TOKEN = process.env.VITE_GITHUB_TOKEN || '';
 
 export function buildHeaders(extra?: Record<string, string>) {
   const h: Record<string, string> = { Accept: "application/vnd.github+json" };

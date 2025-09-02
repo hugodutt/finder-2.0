@@ -66,7 +66,7 @@ export default function App() {
             <Button 
               onClick={onScan} 
               disabled={busy || !user} 
-              className={user ? "bg-indigo-600 hover:bg-indigo-500" : "bg-indigo-400"}
+              className={user ? "bg-indigo-600 hover:bg-indigo-500" : "bg-indigo-500"}
             >
               {busy ? <Loader2 className="w-4 h-4 animate-spin" /> : <Search className="w-4 h-4" />} 
               {busy ? "Buscando…" : "Buscar"}
